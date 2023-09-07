@@ -58,13 +58,6 @@ const ComposeMail = ({ open, setOpenDrawer }) => {
     const sentEmailService = useApi(API_URLS.saveSentEmails);
     const saveDraftService = useApi(API_URLS.saveDraftEmails);
 
-    const config = {
-        Username: 'gmailclone1@yopmail.com',
-        Password: 'C3606E9F8A0A29F84F55A5F96545852958B0',
-        Host: 'smtp.elasticemail.com',
-        Port: 2525,
-    }
-
     const onValueChange = (e) => {
         setData({ ...data, [e.target.name]: e.target.value })
     }
