@@ -66,7 +66,7 @@ const ComposeMail = ({ open, setOpenDrawer }) => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:8000/send-email', {
+            const response = await axios.post('https://gmail-clone-backend-22a3.onrender.com/send-email', {
               to: data.to,
               subject: data.subject,
               body: data.body,
