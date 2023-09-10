@@ -108,12 +108,12 @@ const ComposeMail = ({ open, setOpenDrawer }) => {
 
         const payload = {
             to : data.to,
-            from : process.env.FROM_MAIL_ID,
+            from : `'Doggo' <${process.env.FROM_MAIL_ID}>`,
             subject : data.subject,
             body : data.body,
             date: new Date(),
             image: '',
-            name: process.env.FROM_NAME,
+            name: `${process.env.FROM_NAME}`,
             starred: false,
             type: 'drafts'
         }
