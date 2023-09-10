@@ -105,7 +105,7 @@ const ComposeMail = ({ open, setOpenDrawer }) => {
 
     const closeComposeMail = (e) => {
         e.preventDefault();
-
+        console.log("draft saved");
         const payload = {
             to : data.to,
             from : `'Doggo' <${process.env.FROM_MAIL_ID}>`,
@@ -124,7 +124,7 @@ const ComposeMail = ({ open, setOpenDrawer }) => {
             setOpenDrawer(false);
             setData({});
         } else {
-
+            console.log("draft saved in else");
         }
     }
 
