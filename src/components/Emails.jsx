@@ -52,7 +52,7 @@ const Emails = () => {
                     getEmailsService?.response?.map(email => (
                         <Email 
                             email={email} 
-                            key={`${email.body}, key`}
+                            key={`${email.date}, key`}
                             setStarredEmail={setStarredEmail} 
                             setSelectedEmails={setSelectedEmails}
                             selectedEmails={selectedEmails}
