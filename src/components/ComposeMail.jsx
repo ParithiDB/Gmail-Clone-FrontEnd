@@ -73,12 +73,11 @@ const ComposeMail = ({ open, setOpenDrawer }) => {
             });
       
             console.log('Email sent successfully:', response.data.message);
+            alert('Email sent Successfully');
       
-            // Handle success as needed
+           
           } catch (error) {
             console.error('Email send failed:', error);
-      
-            // Handle the error here
           }
 
         const payload = {
